@@ -1,0 +1,37 @@
+{
+  "name": "teams-jira-bot",
+  "version": "1.0.0",
+  "description": "Microsoft Teams bot for daily Jira ticket status updates and summaries",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts",
+    "watch": "tsc -w"
+  },
+  "keywords": [
+    "microsoft-teams",
+    "bot",
+    "jira",
+    "automation"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "botbuilder": "^4.20.0",
+    "botframework-connector": "^4.20.0",
+    "restify": "^11.1.0",
+    "dotenv": "^16.3.1",
+    "node-cron": "^3.0.3",
+    "axios": "^1.6.2",
+    "date-fns": "^2.30.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.5",
+    "@types/restify": "^8.5.7",
+    "@types/node-cron": "^3.0.11",
+    "typescript": "^5.3.3",
+    "ts-node": "^10.9.2"
+  }
+}
+
